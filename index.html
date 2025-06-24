@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stelp - Your Academic Companion</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><i class="fas fa-graduation-cap"></i> Stelp</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#opportunities">Opportunities</a></li>
+                <li><a href="#research">Research Papers</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#lost-found">Lost & Found</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Stelp</h1>
+                <p>Your all-in-one academic companion for university life</p>
+                <button class="cta-button">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/student-studying.jpg" alt="Student studying">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2 class="section-title">Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Skill-Based Opportunities</h3>
+                    <p>Discover opportunities that match your unique skills using our ML-powered recommendation engine</p>
+                    <a href="#opportunities" class="feature-link">Learn More</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-book"></i></div>
+                    <h3>Research Papers</h3>
+                    <p>Get personalized research paper recommendations based on your interests</p>
+                    <a href="#research" class="feature-link">Learn More</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Assignment Tracker</h3>
+                    <p>Visualize your assignment deadlines and manage your academic schedule</p>
+                    <a href="#assignments" class="feature-link">Learn More</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Internship Tracker</h3>
+                    <p>Keep track of your internship applications and status in one place</p>
+                    <a href="#internships" class="feature-link">Learn More</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-search"></i></div>
+                    <h3>Lost & Found</h3>
+                    <p>Efficiently track and find lost items on campus with our smart tracking system</p>
+                    <a href="#lost-found" class="feature-link">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opportunities Section -->
+        <section id="opportunities" class="opportunities section">
+            <div class="section-container reverse">
+                <div class="section-content">
+                    <h2>Skill-Based Opportunities</h2>
+                    <p>Our machine learning algorithm matches your skills with relevant opportunities on campus and beyond.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Personalized opportunity recommendations</li>
+                        <li><i class="fas fa-check"></i> Skill assessment tools</li>
+                        <li><i class="fas fa-check"></i> Discover hidden opportunities based on your profile</li>
+                        <li><i class="fas fa-check"></i> Get notified of new matches</li>
+                    </ul>
+                    <button class="feature-btn" data-target="skills">Find Opportunities</button>
+                </div>
+                <div class="section-image">
+                    <img src="images/skills.webp" alt="Skill Opportunities">
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Papers Section -->
+        <section id="research" class="research section">
+            <div class="section-container">
+                <div class="section-image">
+                    <img src="images/research.avif" alt="Research Papers">
+                </div>
+                <div class="section-content">
+                    <h2>Research Paper Recommendations</h2>
+                    <p>Stay up-to-date with the latest research in your field of interest with our smart recommendation engine.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Personalized paper recommendations</li>
+                        <li><i class="fas fa-check"></i> Save papers for later reading</li>
+                        <li><i class="fas fa-check"></i> Citation management tools</li>
+                        <li><i class="fas fa-check"></i> Connect with researchers in your field</li>
+                    </ul>
+                    <button class="feature-btn">Discover Research</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assignment Tracker Section -->
+        <section id="assignments" class="assignments section">
+            <div class="section-container reverse">
+                <div class="section-content">
+                    <h2>Assignment Deadline Visualizer</h2>
+                    <p>Never miss another deadline with our intuitive assignment tracker and visualizer.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Visual calendar of all deadlines</li>
+                        <li><i class="fas fa-check"></i> Priority-based organization</li>
+                        <li><i class="fas fa-check"></i> Reminder notifications</li>
+                        <li><i class="fas fa-check"></i> Progress tracking for each assignment</li>
+                    </ul>
+                    <button class="feature-btn" data-target="assignment">Track Opportunities</button>
+                </div>
+                <div class="section-image">
+                    <img src="images/assignment.avif" alt="Assignment Tracking">
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Tracker Section -->
+        <section id="internships" class="internships section">
+            <div class="section-container">
+                <div class="section-image">
+                    <img src="images/internship.webp" alt="Internship Tracking">
+                </div>
+                <div class="section-content">
+                    <h2>Internship Application Tracker</h2>
+                    <p>Keep track of all your internship applications in one place and never miss an important follow-up.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Track application status</li>
+                        <li><i class="fas fa-check"></i> Interview scheduling</li>
+                        <li><i class="fas fa-check"></i> Document management for resumes and cover letters</li>
+                        <li><i class="fas fa-check"></i> Reminder system for follow-ups</li>
+                    </ul>
+                    <button class="feature-btn">Track Applications</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lost & Found Section -->
+        <section id="lost-found" class="lost-found section">
+            <div class="section-container reverse">
+                <div class="section-content">
+                    <h2>Missing Item Tracker</h2>
+                    <p>Lost something on campus? Or found something that doesn't belong to you? Our Missing Item Tracker connects students and helps return items to their rightful owners.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Register lost or found items</li>
+                        <li><i class="fas fa-check"></i> Real-time notifications when matches are found</li>
+                        <li><i class="fas fa-check"></i> Item verification system</li>
+                        <li><i class="fas fa-check"></i> Admin dashboard for university lost & found desks</li>
+                    </ul>
+                    <button class="feature-btn">Report Item</button>
+                </div>
+                <div class="section-image">
+                    <img src="images/lost.webp" alt="Lost and Found">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2 class="section-title">What Students Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <div class="quote">"StudentHub helped me find my lost laptop within hours! The system is so efficient."</div>
+                    <div class="student-info">
+                        <div class="student-name">Alex Johnson</div>
+                        <div class="student-year">Computer Science, Senior</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"The research paper recommendations are spot on! Saved me hours of searching."</div>
+                    <div class="student-info">
+                        <div class="student-name">Priya Sharma</div>
+                        <div class="student-year">Biotechnology, Junior</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"Thanks to the internship tracker, I landed my dream position. It helped me stay organized during applications."</div>
+                    <div class="student-info">
+                        <div class="student-name">Miguel Rodriguez</div>
+                        <div class="student-year">Business, Sophomore</div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2><i class="fas fa-graduation-cap"></i> Stelp</h2>
+                <p>Your all-in-one academic companion for university life. Making student life easier, one feature at a time.</p>
+                <div class="contact">
+                    <span><i class="fas fa-envelope"></i> contact@stelp.edu</span>
+                    <span><i class="fas fa-phone"></i> (123) 456-7890</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#opportunities">Opportunities</a></li>
+                    <li><a href="#research">Research Papers</a></li>
+                    <li><a href="#assignments">Assignments</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#lost-found">Lost & Found</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="email" name="email" class="contact-input" placeholder="Your email address...">
+                    <textarea name="message" class="contact-input" placeholder="Your message..."></textarea>
+                    <button type="submit" class="contact-btn">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Stelp | All rights reserved
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login to Stelp</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group remember">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                <p class="form-footer">Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+                <p class="form-footer">Already have an account? <a href="#" id="login-link">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

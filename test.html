@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Search Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #results {
+      margin-top: 20px;
+    }
+    .job {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .job h3 {
+      margin: 0 0 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live Job Search (Demo)</h1>
+  <input type="text" id="query" placeholder="Enter job title..." />
+  <button onclick="searchJobs()">Search</button>
+  <div id="results"></div>
+
+  <script>
+    async function searchJobs() {
+      const query = document.getElementById('query').value;
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = 'Loading...';
+
+      const url = `https://jsearch.p.rapidapi.com/search?query=${encodeURIComponent(query)}&page=1&num_pages=1`;
+
+      const options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': 'ff75c8d018mshf82e8890c63b33ep130186jsn5f2fd6c71386', // <-- Replace this
+          'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
+        }
+      };
+
+      try {
+        const response = await fetch(url, options);
+        const data = await response.json();
+
+        if (!data || !data.data || data.data.length === 0) {
+          resultsDiv.innerHTML = '<p>No jobs found.</p>';
+          return;
+        }
+
+        resultsDiv.innerHTML = '';
+        data.data.forEach(job => {
+          const jobElem = document.createElement('div');
+          jobElem.className = 'job';
+          jobElem.innerHTML = `
+            <h3>${job.job_title}</h3>
+            <p><strong>Company:</strong> ${job.employer_name}</p>
+            <p><strong>Location:</strong> ${job.job_city || 'N/A'}, ${job.job_country}</p>
+            <a href="${job.job_apply_link}" target="_blank">Apply Now</a>
+          `;
+          resultsDiv.appendChild(jobElem);
+        });
+      } catch (error) {
+        console.error(error);
+        resultsDiv.innerHTML = '<p>Error fetching jobs.</p>';
+      }
+    }
+  </script>
+</body>
+</html>
